@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+
+
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <meta charset="UTF-8">
+        <title>Personal Movie Recommendations</title>
+    </head>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                      <a class="navbar-brand" href="#">Movie Recommendations</a>
+            </div>
+        </div>
+    </nav>
+
+    <body>
+    <!--Render Movie list as card columns here -->
+   <div class="container">
+    <div class="card-columns">
+        <!--For each movie in the movie list, add a movie card-->
+        {% for movie in movie_list %}
+        <div class="col-auto mb-3">
+            <div class="card">
+                <!--Movie Poster image-->
+                <img class="card-img-left" src="https://image.tmdb.org/t/p/original/{{movie.poster_path}}" width="320" height="480">
+                <div class="card-body bg-light">
+                    <!--Movie title-->
+                    <h5 class="card-title">{{movie.original_title}}</h5>
+                    <!--Movie overview-->
+                    <p class="card-text">{{movie.overview}}</p>
+                    <!--Movie genres-->
+                    <p class="card-text">Genres: <b>{{movie.genres}}</b></p>
+                    <!--Movie vote average-->
+                    <p class="card-text">Rating: <b>{{movie.vote_average}}</b></p>
+                    <!--Movie language and release date-->
+                    <p class="card-text">{{movie.original_language}}, {{movie.release_date}}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+    </body>
+
+</html>

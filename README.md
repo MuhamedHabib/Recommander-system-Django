@@ -8,5 +8,4 @@ after that you need to configure database configuation in :setting.py (port that
 
 and finally enjoy with adding films
 
-![Uploading ![b](https://user-images.githubusercontent.com/78917614/144708896-93de1e1d-7d38-4398-80f6-cd6a4df5c6d4.PNG).PNG…]()
 ![a](https://user-images.githubusercontent.com/78917614/144708914-7535d4ac-d6c2-4c00-81c5-038886d81d55.PNG)

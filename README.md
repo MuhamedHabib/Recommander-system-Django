@@ -1,5 +1,7 @@
 # RecommanderDjango
 is a web site  contains more than 40000 movies, that helps you to chose you prefered movie with dynamic ratings 
+![b](https://user-images.githubusercontent.com/78917614/144708963-1bb9184d-2661-4767-bf7d-fe461521e443.PNG)
+
 you can use code source using : git clone https://github.com/MuhamedHabib/RecommanderDjango.git
 
 then you need to install all requriements :  pip install -r requirements. txt (if you're using python 2) or  pip3 install -r requirements. txt (for python 3)
